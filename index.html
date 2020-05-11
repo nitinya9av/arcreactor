@@ -1,114 +1,22 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Google Code to Learn</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
-    <style>
-    html, body {
-      background: white;
-      height: 100%;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      font-family: 'Roboto', 'Noto', sans-serif;
-    }
-    a {
-      color: blue;
-      text-decoration: none;
-    }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="/static/polymer-1.2.0/webcomponentsjs/webcomponents-lite.js"></script>
-    
-      <link rel="import" href="/static/html-imports/explorer-imports.html">
-    
-    <link rel="import" href="/modules/explorer/_static/components/course-explorer/course-explorer.html">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <title>Hello, world!</title>
   </head>
   <body>
-    <dom-module name="global-module">
+    <h1>Hello, world!</h1>
 
-      
-      <template>
-        <course-explorer navbar_links="{{navbar_links}}"></course-explorer>
-      </template>
-      
-
-      <script>
-      function initialize() {
-      // Waits until Polymer is available as a global variable, then invokes it
-
-          if (typeof(Polymer) !== "undefined" && Polymer.ImportStatus && Polymer.ImportStatus._ready) {
-             Polymer({
-              is: 'global-module',
-              properties: {
-                 navbar_links: {
-                   type: Object,
-                   value: {"right": [], "left": []}
-                 }
-              },
-            });
-        } else {
-           console.log("Waiting for Polymer to get ready..");
-           window.setTimeout(initialize, 200)
-        }
-      }
-      initialize()
-    </script>
-    </dom-module>
-
-    <global-module>
-    </global-module>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
-  <!-- Uncomment and edit this HTML to enable a footer.
-Some sample code has been provided to make things easier. -->
-
-<footer id='gcb-footer' class="gcb-footer gcb-footer-stretch-bottom">
-    <div id="gcb-footer-global" role="contentinfo">
-        <div class="gcb-footer-centre-align">
-            <div class="footer-logo-block">
-              <section style = "padding: 17px 0px 0px 0px">
-                <div>
-                  <h3>Co-organized by:</h3>
-                </div>
-              </section>
-            </div>
-            <div class="footer-logo-block">
-                <section>
-                    <div>
-                      <a href="https://cloud.google.com/" target="_blank">
-                          <img src="/modules/code2learn/_static/img/Google-Cloud.png" height="65px" />
-                      </a>
-                      <a href="http://india.acm.org/" target="_blank">
-                          <img src="/modules/code2learn/_static/img/ACM-logo.jpg" height="65px" />
-                      </a>
-                      <a href="https://cspathshala.org/" target="_blank">
-                          <img src="/modules/code2learn/_static/img/cspathshala.png" height="65px" />
-                      </a>
-                      <a href="https://www.iisc.ac.in/" target="_blank">
-                          <img src="/modules/code2learn/_static/img/logo-iisc.png" height="65px" />
-                      </a>
-                      <a href="https://www.iiitb.ac.in/" target="_blank">
-                          <img src="/modules/code2learn/_static/img/logo-iiitb.png" height="65px" />
-                      </a>
-                        <!-- <a href="https://www.iiitd.ac.in/" target="_blank">
-                            <img src="/modules/code2learn/_static/img/footer-logo-iiitd.png" />
-                        </a> -->
-                    </div>
-                </section>
-            </div>
-        </div>
-        <div>
-            <div id="gcb-terms" class="gcb-terms-block2" style="padding: 10px">
-                <p>
-                    <a target="_blank" href='https://google.co.in'>Google India</a> -
-                    <a target="_blank" href='https://google.com/privacy.html'>Privacy</a> -
-                    <a target="_blank" href='/terms'>Terms</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
 </html>
