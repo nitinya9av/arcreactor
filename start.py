@@ -46,7 +46,7 @@ class Posts(db.Model):
 
 @app.route("/")
 def home():
-    return render_template('index.html', params=params)
+    return render_template ('index.html', params=params)
 
 @app.route("/courses")
 def courses():
